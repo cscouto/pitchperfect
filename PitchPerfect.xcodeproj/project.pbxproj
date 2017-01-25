@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		04564CB61E07469A00A14E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04564CB51E07469A00A14E33 /* AppDelegate.swift */; };
-		04564CB81E07469A00A14E33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04564CB71E07469A00A14E33 /* ViewController.swift */; };
+		04564CB81E07469A00A14E33 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04564CB71E07469A00A14E33 /* MainVC.swift */; };
 		04564CBB1E07469A00A14E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04564CB91E07469A00A14E33 /* Main.storyboard */; };
 		04564CBD1E07469A00A14E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04564CBC1E07469A00A14E33 /* Assets.xcassets */; };
 		04564CC01E07469A00A14E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04564CBE1E07469A00A14E33 /* LaunchScreen.storyboard */; };
+		8C2F5BB71E38FE3E004968BE /* OptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2F5BB61E38FE3E004968BE /* OptionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04564CB21E07469A00A14E33 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04564CB51E07469A00A14E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04564CB71E07469A00A14E33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04564CB71E07469A00A14E33 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		04564CBA1E07469A00A14E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04564CBC1E07469A00A14E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04564CBF1E07469A00A14E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04564CC11E07469A00A14E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C2F5BB61E38FE3E004968BE /* OptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				04564CB51E07469A00A14E33 /* AppDelegate.swift */,
-				04564CB71E07469A00A14E33 /* ViewController.swift */,
+				04564CB71E07469A00A14E33 /* MainVC.swift */,
 				04564CB91E07469A00A14E33 /* Main.storyboard */,
 				04564CBC1E07469A00A14E33 /* Assets.xcassets */,
 				04564CBE1E07469A00A14E33 /* LaunchScreen.storyboard */,
 				04564CC11E07469A00A14E33 /* Info.plist */,
+				8C2F5BB61E38FE3E004968BE /* OptionVC.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -91,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Tiago Henrique";
 				TargetAttributes = {
 					04564CB11E07469A00A14E33 = {
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04564CB81E07469A00A14E33 /* ViewController.swift in Sources */,
+				04564CB81E07469A00A14E33 /* MainVC.swift in Sources */,
+				8C2F5BB71E38FE3E004968BE /* OptionVC.swift in Sources */,
 				04564CB61E07469A00A14E33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +185,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +236,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -299,6 +305,7 @@
 				04564CC61E07469A00A14E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
