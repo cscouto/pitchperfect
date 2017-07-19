@@ -12,8 +12,6 @@ import AVFoundation
 class OptionVC: UIViewController {
     
     var url: URL!
-    
-    var recordedAudioURL:URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
