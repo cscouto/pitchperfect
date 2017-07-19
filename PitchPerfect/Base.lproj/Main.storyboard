@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--AllRecording-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,25 +22,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP1-qg-zPa">
-                                <rect key="frame" x="110" y="256" width="155" height="155"/>
-                                <state key="normal" image="Record"/>
+                                <rect key="frame" x="138" y="284" width="100" height="100"/>
+                                <state key="normal" image="record_100"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlF-au-MXh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gk2-9Z-7mB">
-                                <rect key="frame" x="133.5" y="419" width="107" height="21"/>
+                                <rect key="frame" x="134.5" y="392" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-lZ-ItJ">
-                                <rect key="frame" x="157" y="448" width="60" height="59"/>
+                                <rect key="frame" x="158" y="421" width="60" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="JVe-ch-UqQ"/>
                                     <constraint firstAttribute="width" constant="60" id="dym-si-vkl"/>
                                 </constraints>
-                                <state key="normal" image="Stop"/>
+                                <state key="normal" image="stop_50"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngP-Kq-dvU"/>
                                 </connections>
@@ -56,7 +56,9 @@
                             <constraint firstItem="JP1-qg-zPa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xhW-eQ-jZT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R2D-BA-dZU"/>
+                    <navigationItem key="navigationItem" title="AllRecording" id="R2D-BA-dZU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="N6Z-dl-eWp"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="recordingButton" destination="JP1-qg-zPa" id="g96-Av-lnY"/>
                         <outlet property="recordingLabel" destination="Gk2-9Z-7mB" id="PVK-hg-TzY"/>
@@ -68,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--OptionVC-->
+        <!--AllRecording-->
         <scene sceneID="ayn-G7-qSq">
             <objects>
-                <viewController id="CTU-SZ-wlE" customClass="OptionVC" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CTU-SZ-wlE" customClass="PlayVC" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="thY-DV-kak"/>
                         <viewControllerLayoutGuide type="bottom" id="jai-YH-wCa"/>
@@ -91,14 +93,14 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMD-2P-LWF">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="141"/>
-                                                        <state key="normal" image="Slow"/>
+                                                        <state key="normal" image="slow_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="2BW-Ot-D8p"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Go-Xe-F05">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="141"/>
-                                                        <state key="normal" image="Fast"/>
+                                                        <state key="normal" image="fast_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="QWO-zY-xsJ"/>
                                                         </connections>
@@ -110,14 +112,14 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9z-o2-J93">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="140.5"/>
-                                                        <state key="normal" image="LowPitch"/>
+                                                        <state key="normal" image="darthvader_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="zWJ-xg-Hbw"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-5S-nAt">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="140.5"/>
-                                                        <state key="normal" image="HighPitch"/>
+                                                        <state key="normal" image="chipmunk_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="ltY-cM-F70"/>
                                                         </connections>
@@ -129,14 +131,14 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2N-Gq-jsu">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="141"/>
-                                                        <state key="normal" image="Echo"/>
+                                                        <state key="normal" image="echo_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="c5r-R8-gTG"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJd-Le-Vsu">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="141"/>
-                                                        <state key="normal" image="Reverb"/>
+                                                        <state key="normal" image="reverb_100"/>
                                                         <connections>
                                                             <action selector="playSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="jT3-mn-S2q"/>
                                                         </connections>
@@ -152,7 +154,7 @@
                                                             <constraint firstAttribute="height" constant="80" id="EEs-1g-51P"/>
                                                             <constraint firstAttribute="width" constant="80" id="SKy-zt-DnK"/>
                                                         </constraints>
-                                                        <state key="normal" image="Stop"/>
+                                                        <state key="normal" image="stop_50"/>
                                                         <connections>
                                                             <action selector="stopSound:" destination="CTU-SZ-wlE" eventType="touchUpInside" id="k38-R8-gPI"/>
                                                         </connections>
@@ -184,6 +186,13 @@
                             <constraint firstAttribute="trailing" secondItem="I7i-Vw-hbL" secondAttribute="trailing" id="yMz-6d-yFy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="AllRecording" id="TMd-Wh-ipp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="3Fv-7h-EvP">
+                            <connections>
+                                <action selector="btnShare:" destination="CTU-SZ-wlE" id="Y8O-rk-pMe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="echo" destination="LJd-Le-Vsu" id="RqB-4y-K3d"/>
                         <outlet property="fast" destination="3Go-Xe-F05" id="Q5E-Ug-dP3"/>
@@ -206,6 +215,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vn0-sV-ybU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.13126835227012634" green="0.29124444723129272" blue="0.43341100215911865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -218,13 +231,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Echo" width="90" height="90"/>
-        <image name="Fast" width="90" height="90"/>
-        <image name="HighPitch" width="90" height="90"/>
-        <image name="LowPitch" width="90" height="90"/>
-        <image name="Record" width="155" height="155"/>
-        <image name="Reverb" width="90" height="90"/>
-        <image name="Slow" width="90" height="90"/>
-        <image name="Stop" width="155" height="155"/>
+        <image name="chipmunk_100" width="100" height="100"/>
+        <image name="darthvader_100" width="100" height="100"/>
+        <image name="echo_100" width="100" height="100"/>
+        <image name="fast_100" width="100" height="100"/>
+        <image name="record_100" width="100" height="100"/>
+        <image name="reverb_100" width="100" height="100"/>
+        <image name="slow_100" width="100" height="100"/>
+        <image name="stop_50" width="50" height="50"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
